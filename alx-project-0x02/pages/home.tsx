@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React, { FC } from 'react';
-import Header from '../components/Header';
-import Card from '../components/common/Card'; // Import the new Card component
+import Header from '@/components/Header';
+import Card from '@/components/common/Card'; // Import the new Card component
 
 const HomePage: FC = () => {
   return (
