@@ -15,6 +15,7 @@ The project covers fundamental concepts from initial setup to building interacti
  - Build responsive layouts with navigation
 
 # Project Structure
+```
 alx-project-0x02/
 ├── components/
 │   ├── common/
@@ -45,3 +46,4 @@ alx-project-0x02/
 ├── package.json
 ├── README.md
 └── tsconfig.json
+```
