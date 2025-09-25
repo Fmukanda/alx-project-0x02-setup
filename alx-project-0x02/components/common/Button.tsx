@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ButtonProps, ButtonSize, ButtonShape } from '../../interfaces'; // Assuming relative path for interfaces
+import { ButtonProps, ButtonSize, ButtonShape } from '@/interfaces'; 
 
 // Helper function to map size prop to Tailwind classes
 const getSizeClasses = (size: ButtonSize): string => {
@@ -60,3 +60,4 @@ const Button: FC<ButtonProps> = ({
 };
 
 export default Button;
+
