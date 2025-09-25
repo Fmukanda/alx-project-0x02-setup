@@ -38,3 +38,14 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   shape?: ButtonShape;
   children: React.ReactNode; // Content inside the button
 }
+
+/**
+ * Defines the props structure for the PostCard component, 
+ * matching the data structure from JSONPlaceholder.
+ */
+export interface PostProps {
+  userId: number;
+  id: number;
+  title: string;
+  body: string; // Using 'body' to match the API response
+}
