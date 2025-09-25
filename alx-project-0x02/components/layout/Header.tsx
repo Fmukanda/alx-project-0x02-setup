@@ -1,30 +1,43 @@
 import Link from 'next/link';
-import React from 'react';
+import { FC } from 'react';
 
-const Header: React.FC = () => {
+// Use the FC (Functional Component) type from React
+const Header: FC = () => {
   return (
-    <header className="bg-gray-800 p-4 text-white flex space-x-5">
-      <nav className="flex space-x-5">
+    // Tailwind CSS styling for the header
+    <header className="bg-gray-800 p-4 shadow-lg sticky top-0 z-10">
+      <nav className="flex space-x-6">
         
         {/* Navigates to the root (index) page */}
-        <Link href="/">
-            <span className="text-white hover:text-blue-400 cursor-pointer transition duration-300">
-                Root
-            </span>
+        <Link 
+          href="/" 
+          className="text-white hover:text-blue-400 transition duration-300 font-semibold"
+        >
+          Root
         </Link>
         
-        {/* Navigates to the /home page */}
-        <Link href="/home">
-            <span className="text-white hover:text-blue-400 cursor-pointer transition duration-300">
-                Home
-            </span>
+        {/* Link to the /home page */}
+        <Link 
+          href="/home" 
+          className="text-white hover:text-blue-400 transition duration-300 font-semibold"
+        >
+          Home
         </Link>
 
-        {/* Navigates to the /about page */}
-        <Link href="/about">
-            <span className="text-white hover:text-blue-400 cursor-pointer transition duration-300">
-                About
-            </span>
+        {/* Link to the /about page */}
+        <Link 
+          href="/about" 
+          className="text-white hover:text-blue-400 transition duration-300 font-semibold"
+        >
+          About
+        </Link>
+        
+        {/* Link to the new /posts page */}
+        <Link 
+          href="/posts" 
+          className="text-white hover:text-blue-400 transition duration-300 font-semibold"
+        >
+          Posts
         </Link>
       </nav>
     </header>
