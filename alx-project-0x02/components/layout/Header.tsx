@@ -39,6 +39,14 @@ const Header: FC = () => {
         >
           Posts
         </Link>
+        
+        {/* Link to the new /users page */}
+        <Link 
+          href="/users" 
+          className="text-white hover:text-blue-400 transition duration-300 font-semibold"
+        >
+          Users
+        </Link>
       </nav>
     </header>
   );
