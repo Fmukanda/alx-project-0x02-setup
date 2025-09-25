@@ -49,3 +49,26 @@ export interface PostProps {
   title: string;
   body: string; // Using 'body' to match the API response
 }
+
+/**
+ * Defines the address structure from the JSONPlaceholder API.
+ */
+export interface UserAddress {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+}
+
+/**
+ * Defines the props structure for the UserCard component, 
+ * matching the data from the JSONPlaceholder API.
+ */
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+  address: UserAddress;
+  phone: string;
+  website: string;
+}
