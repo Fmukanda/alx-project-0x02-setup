@@ -3,7 +3,7 @@ import React, { FC, useState } from 'react';
 import Header from '@/components/layout/Header'; // 👈 UPDATED IMPORT
 import Card from '@/components/common/Card'; 
 import PostModal from '@/components/common/PostModal'; 
-import { PostData } from '../interfaces'; 
+import { PostData } from '@/interfaces'; 
 
 const initialPosts: PostData[] = [
   // ... (initial data remains the same)
