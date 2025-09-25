@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { type PostProps } from '../../interfaces'; 
+import { PostProps } from '@/interfaces';
 
 /**
  * A dedicated component to display fetched post data.
@@ -21,3 +21,4 @@ const PostCard: FC<PostProps> = ({ title, body, userId, id }) => {
 };
 
 export default PostCard;
+
