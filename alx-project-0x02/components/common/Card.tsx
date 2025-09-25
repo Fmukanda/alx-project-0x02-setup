@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { CardProps } from '../../interfaces'; // Adjust path based on your project structure
+import { type CardProps } from '@/interfaces'; 
 
 /**
  * A reusable card component to display dynamic title and content.
