@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import React, { FC, useState, useEffect } from 'react';
 import Header from '@/components/layout/Header';
-import PostCard from '@/components/common/PostCard'; // Import the new PostCard
-import { PostProps } from '../interfaces'; // Import the PostProps interface
+import PostCard from '@/components/common/PostCard'; 
+import { PostProps } from '@/interfaces'; 
+// getStaticProps
 
 const PostsPage: FC = () => {
   const [posts, setPosts] = useState<PostProps[]>([]);
