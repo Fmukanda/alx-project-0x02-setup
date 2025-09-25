@@ -3,7 +3,7 @@ import React, { FC, useState } from 'react';
 import Header from '@/components/Header';
 import Card from '@/components/common/Card'; 
 import PostModal from '@/components/common/PostModal'; // Import the new Modal component
-import { PostData } from '../interfaces'; // Import the interface
+import { PostData } from '@/interfaces'; // Import the interface
 
 // Initial static content array (uses PostData structure)
 const initialPosts: PostData[] = [
